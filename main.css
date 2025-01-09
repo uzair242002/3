@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    
+    grid-template-rows: 10% 10% 30% 50% ;
+    display: grid;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav2{
+    background-color: blue;
+}
+.content{
+    background-color: green;
+}
+.image{
+background-color: aqua;
+}
+.gola{
+    background-color: rgb(255, 255, 255);
+    height: 5vw;
+    width:10vw;
+    padding: 1vw;
+  
+
+}
+.nav :nth-child(1){
+    margin-right: 70vw;
+}
+.color1{
+height: 50px;
+width: 50px;
+background-color: rgb(0, 0, 0);
+margin: 2px;
+border-radius: 50%;
+
+}
+.color2{
+    position: absolute;
+    left:7.5%;
+    border-radius: 50%;
+    top: 2.3%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    }
