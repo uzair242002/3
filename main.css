@@ -8,52 +8,134 @@ html,body{
     width: 100%;
 }
 .main{
-    
-    grid-template-rows: 10% 10% 30% 50% ;
-    display: grid;
-    height: 100vh;
     background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
 }
 .nav{
     background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
     display: flex;
-    justify-content: flex-end;
-
-}
-.nav2{
-    background-color: blue;
-}
-.content{
-    background-color: green;
-}
-.image{
-background-color: aqua;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vh;
 }
 .gola{
-    background-color: rgb(255, 255, 255);
-    height: 5vw;
-    width:10vw;
-    padding: 1vw;
-  
-
-}
-.nav :nth-child(1){
-    margin-right: 70vw;
-}
-.color1{
-height: 50px;
-width: 50px;
-background-color: rgb(0, 0, 0);
-margin: 2px;
-border-radius: 50%;
-
-}
-.color2{
-    position: absolute;
-    left:7.5%;
+    height: 3vw;
+    width: 3vw;
+    background-color: black;
     border-radius: 50%;
-    top: 2.3%;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(0, 0, 0);
+}
+.nav1{
+    display: flex;
+}
+.nav2{
+    display: flex;
+}
+.nav2 h4{
+    font-size: 2vh;
+    margin-left: 2vw;
+    font-weight: 500;
+}
+.nav2 h4 span{
+    font-size: 2vh;
+    margin-left: 2vw;
+    font-weight: 500;
+    color: rgb(255, 162, 40);
+}
+.nav3{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 4vh;
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    height: calc(100% - 20vh);
+    width: 100vw;
+}
+.textcontent{
+    height: 35vh;
+    width: 100vw;
+    background-color:rgb(255, 255, 255) ;
+    display: flex;
+
+    overflow-x: auto;
+}
+.elem{
+    flex-shrink:0;
+    height: 100%;
+    width: 60vw;
+    background-color: rgb(255, 255, 255);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 8vh;
+    font-weight: 300;
+}
+.textcontent::-webkit-scrollbar{
+background-color: transparent;
+height: 1vh;
+
+}
+.textcontent::-webkit-scrollbar-thumb{
+background-color: rgb(255, 144, 144);
+
+}
+.imagecontent{
+    height: 45vh;
+    width: 100vw;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    overflow-x: auto;
+}
+.imagecontent img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+   
+    
+}
+.nav2 h5{
+    display: none;
+}
+.imagecontent::-webkit-scrollbar{
+display: none;
+}
+
+@media (max-width: 600px) {
+    .nav3{
+        background-color: rgb(255, 255, 255);
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+       gap: 10px;
+        
     }
+    
+   .nav2 h4{
+    display: none;
+   }
+    .nav2 h5{
+        display: initial;
+        margin-left: 60%;
+    }
+    .nav3 h4{
+        font-size: 1.5vh;
+      
+        font-weight: 500; 
+    }
+    .elem h1{
+        font-size: 4vh;
+        font-weight: 300;
+    }
+}
